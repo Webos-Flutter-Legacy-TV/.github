@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Questions and ideas
+    url: https://github.com/Webos-Flutter-Legacy-TV/flutter-webos/discussions
+    about: Ask how to do something, share what you built, or float an idea before opening an issue.
   - name: Porting guide
     url: https://github.com/Webos-Flutter-Legacy-TV/flutter-webos/blob/main/legacy-webos/docs/PORTING-GUIDE.md
     about: How to build an existing flutter-webos app for older webOS, plugin notes and known differences.
