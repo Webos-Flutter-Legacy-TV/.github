@@ -1,0 +1,76 @@
+name: TV compatibility report
+description: Tell us how Flutter apps run on your TV. Reports from releases other than webOS 6 are especially wanted.
+title: "[TV report]: <model>, webOS <version>"
+labels: ["compat-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The project has been verified on a single webOS 6 TV, so every report from another model or release helps.
+        The test apps live in [`legacy-webos/tests`](https://github.com/Webos-Flutter-Legacy-TV/flutter-webos/tree/main/legacy-webos/tests). Each writes its results to `compat_results.log` in the installed app's folder.
+        Please **leave out personal data** (IP address, serial number, MAC address).
+  - type: input
+    id: tv
+    attributes:
+      label: TV model and year
+      placeholder: "e.g. 55UN7300 (2020)"
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: webOS release and firmware version
+      placeholder: "e.g. webOS TV 5.5.0, firmware 04.xx.xx"
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: How the app was installed
+      options:
+        - Developer Mode (ares-install)
+        - Rooted TV (Homebrew Channel / SSH)
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: starts
+    attributes:
+      label: Does an app built with --legacy start?
+      options:
+        - "Yes, it shows its UI"
+        - "Starts, but the screen stays black or wrong"
+        - "Exits or crashes at launch"
+        - "Won't install"
+    validations:
+      required: true
+  - type: checkboxes
+    id: works
+    attributes:
+      label: What works
+      options:
+        - label: UI renders at full resolution
+        - label: Remote D-pad / OK
+        - label: Remote Back
+        - label: Network (HTTP/HTTPS)
+        - label: Storage (shared_preferences, sqflite)
+        - label: Video playback (video_player)
+        - label: Audio playback (audioplayers / audioplayers_soloud)
+        - label: DRM playback (PlayReady / Widevine)
+  - type: textarea
+    id: results
+    attributes:
+      label: Test app results
+      description: Paste `compat_results.log` from any of compat_test, plugins_test, video_test, drm_test, input_test or soloud_test.
+      render: text
+  - type: textarea
+    id: survey
+    attributes:
+      label: TV survey (optional, rooted TVs)
+      description: "Output of `legacy-webos/tools/webos-survey.sh`: kernel, glibc, Wayland, GPU and library versions. Check it for personal data first."
+      render: text
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Frame rate, glitches, compat.log excerpts, screenshots.

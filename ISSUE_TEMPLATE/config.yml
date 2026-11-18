@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Porting guide
+    url: https://github.com/Webos-Flutter-Legacy-TV/flutter-webos/blob/main/legacy-webos/docs/PORTING-GUIDE.md
+    about: How to build an existing flutter-webos app for older webOS, plugin notes and known differences.
+  - name: Security vulnerability
+    url: https://github.com/Webos-Flutter-Legacy-TV/.github/blob/main/SECURITY.md
+    about: Please report security problems privately, not as a public issue.
+  - name: Problems on webOS 26 with LG's own SDK
+    url: https://github.com/lg-flutter-webos
+    about: Issues that also happen with unmodified upstream flutter-webos on webOS 26 belong upstream.

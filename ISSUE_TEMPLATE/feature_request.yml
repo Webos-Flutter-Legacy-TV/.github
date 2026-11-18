@@ -1,0 +1,41 @@
+name: Feature request
+description: Suggest support for a plugin, webOS release, API or tool.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The app or use case, and what stops you today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you'd like
+    validations:
+      required: true
+  - type: dropdown
+    id: webos
+    attributes:
+      label: webOS releases it matters for
+      multiple: true
+      options:
+        - webOS 26
+        - webOS 22-25
+        - webOS 6
+        - webOS 5
+        - webOS 4
+        - webOS 3 or older
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds you've tried
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Can you help?
+      options:
+        - label: I can test on my TV (model and release in the description).
+        - label: I'd like to send a pull request.
