@@ -11,7 +11,9 @@ releases**, starting with webOS 6.
 | --- | --- |
 | [flutter-webos](https://github.com/Webos-Flutter-Legacy-TV/flutter-webos) | The `flutter-webos` CLI plus [`legacy-webos/`](https://github.com/Webos-Flutter-Legacy-TV/flutter-webos/tree/main/legacy-webos): the packager, compatibility shims, tools, test apps and the [porting guide](https://github.com/Webos-Flutter-Legacy-TV/flutter-webos/blob/main/legacy-webos/docs/PORTING-GUIDE.md) |
 | [plugins](https://github.com/Webos-Flutter-Legacy-TV/plugins) | webOS plugins with fixes found while porting (video_player, audioplayers_soloud, flutter_secure_storage, ...) |
-| [ndk](https://github.com/Webos-Flutter-Legacy-TV/ndk), [artifacts](https://github.com/Webos-Flutter-Legacy-TV/artifacts), [devcontainer](https://github.com/Webos-Flutter-Legacy-TV/devcontainer), [plugins-beta](https://github.com/Webos-Flutter-Legacy-TV/plugins-beta) | Forks kept in step with upstream |
+| [ndk](https://github.com/Webos-Flutter-Legacy-TV/ndk), [artifacts](https://github.com/Webos-Flutter-Legacy-TV/artifacts), [devcontainer](https://github.com/Webos-Flutter-Legacy-TV/devcontainer) | Kept in step with LG's upstream |
+
+All repositories follow [lg-flutter-webos](https://github.com/lg-flutter-webos) and regularly merge its changes; the work for older TVs is added on top.
 
 ### Status
 
